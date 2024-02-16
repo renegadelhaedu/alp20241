@@ -6,7 +6,7 @@
 valorproduto = int(input('digite o valor da caixa de som'))
 
 final = valorproduto * 0.83
-print(f'a caixa vai custar R${valorproduto}')
+print(f'a caixa vai custar R${final}')
 
 
 #final = 245 * 0.83
