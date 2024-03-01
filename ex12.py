@@ -1,9 +1,10 @@
 #questao do suspeito
-p1 = input('Telefonou para a vítima?')
+p1 = int(input('Telefonou para a vítima?'))
 p2 = input('Esteve no local do crime?')
 p3 = input('Mora perto da vítima?')
 p4 = input('Devia para a vítima?')
 p5 = input('Já trabalhou com a vítima?')
+
 bo = 0
 if(p1 == 'sim'):
     bo = bo + 1
