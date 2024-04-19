@@ -1,5 +1,6 @@
+p = [2,3,4,5,7,8,2]
 
-kk = ['joao francisco vai voltar a pe','italia']
-kk[1] += 'rene'
+while(p.count(2) > 0):
+    p.remove(2)
 
-print(kk)
+print(p)
