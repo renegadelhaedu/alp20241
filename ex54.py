@@ -1,6 +1,6 @@
 from PIL import Image
 
-imagem = Image.open('C:/Users/rnsg/Desktop/fotorene.png')
+imagem = Image.open('C:/Users/rnsg/Desktop/fotorene2.png')
 
 largura = imagem.size[0]
 altura = imagem.size[1]
