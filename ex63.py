@@ -8,6 +8,10 @@ while(True):
     print('2-listar melhores defensoras')
     print('3-listar melhores atacantes')
     print('4-atualizar jogadora')
+    print('5-listar jogadores maiores de 17 que são boas defensoras')
+    print('6-remover as jogadoras que não sao boas defensoras')
+    print('7-remover2 as jogadoras que não sao boas defensoras')
+    print('8-listar todas jogadoras')
     print('0-sair')
     op = input('digite a opcao desejada')
 
@@ -36,6 +40,35 @@ while(True):
 
         jogadoras[cod][2]['ataque'] = ataq
         jogadoras[cod][2]['defesa'] = defe
+    elif(op == '5'):
+        for chave in jogadoras:
+            if(jogadoras[chave][1] > 17 and jogadoras[chave][2]['defesa'] >= 70):
+                print(jogadoras[chave][0])
+
+    elif(op == '6'):
+        rem = []
+        for chave in jogadoras:
+            if(jogadoras[chave][2]['defesa'] < 70):
+                rem.append(chave)
+
+        for codjogadora in rem:
+            jogadoras.pop(codjogadora)
+
+    elif(op == '7'):
+        busca = input('digite o nome da jogadora que vc esta procurando')
+        for chave in jogadoras:
+            if(busca in jogadoras[chave][0]):
+                print(f'{chave} - {jogadoras[chave][0]}')
+        codRem = int(input('digite o codigo da jogadora que vc quer remover'))
+        if(codRem in jogadoras):
+            jogadoras.pop(codRem)
+        else:
+            print('meu lindo, vc digitou um codigo invalido')
+
+    elif(op == '8'):
+        for chave in jogadoras:
+            print(f'{chave} - {jogadoras[chave][0]}')
+
     elif(op == '0'):
         break
 
