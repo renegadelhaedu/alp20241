@@ -54,5 +54,5 @@ while(opmenu_pr != 0):
         senha = input('digite sua senha')
         perfil = int(input('digite 1 para cliente do cinema ou 2 para administrador do cinema'))
 
-        usuarios[login] = [login, nome, perfil, senha]
+        usuarios[login] = [ nome, perfil, senha]
         print('Cadastro realizado com sucesso!!!\n')
