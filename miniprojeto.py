@@ -28,6 +28,8 @@ while(opmenu_pr != 0):
             print('2-... filme')
             print('3-... filme')
             print('0-Logout')
+
+
         else:
             print('Senha ou usuario inválido')
 
