@@ -5,6 +5,7 @@ def fazer_login(login, senha, dicionario, tipo):
             return True
     return False
 
+
 def cadastrar_user(dicionario):
     print('\n---Cadastro de usuário---\n')
     nome = input('digite seu nome completo')
